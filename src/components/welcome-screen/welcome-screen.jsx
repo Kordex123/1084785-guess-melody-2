@@ -19,7 +19,7 @@ const WelcomeScreen = (props) => {
 };
 
 WelcomeScreen.propTypes = {
-  time: PropTypes.number,
+  time: PropTypes.time,
   errorCount: PropTypes.number
 };
 

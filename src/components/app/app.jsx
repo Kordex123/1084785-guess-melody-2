@@ -11,7 +11,7 @@ const App = (props) => {
 };
 
 App.propTypes = {
-  gameTime: PropTypes.number,
+  gameTime: PropTypes.time,
   errorCount: PropTypes.number
 };
 
