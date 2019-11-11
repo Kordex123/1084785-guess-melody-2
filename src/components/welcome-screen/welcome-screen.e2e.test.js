@@ -10,10 +10,10 @@ it(`WelcomeScreen (e2e) is correctly rendered after relaunch`, () => {
   const welcome = shallow(<WelcomeScreen
     time={7}
     errorCount={4}
-    onClick={clickHandler}
+    onStartButtonClick={clickHandler}
   />);
 
-  const startButton = welcome.find(`button`);
+  const startButton = welcome.find(`.welcome__button`);
   startButton.simulate(`click`);
 
   expect(clickHandler).toHaveBeenCalledTimes(1);
